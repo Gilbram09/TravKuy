@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.anew">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jalan"
+        android:label="Trav Kuy"
+        android:roundIcon="@drawable/airplane"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+    <activity android:name=".dasboard" ></activity>
+        <activity android:name=".Setting.SettingSetting" />
+        <activity android:name=".Wisata.wisatalanjutan" />
+        <activity android:name=".Bundle.BundleBundle" />
+        <activity android:name=".Bundle.DetailBundle" />
+        <activity android:name=".Online" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Ticket.TicketTicket" />
+        <activity android:name=".Ticket.Detail_Tiket" />
+        <activity
+            android:name=".Activity_Tiket_2"
+            android:label="@string/title_activity__tiket_2"
+             />
+        <activity android:name=".menuitem.Setting" />
+        <activity android:name=".Profil" />
+        <activity android:name=".BeliBeli" />
+        <activity android:name=".kuliner.Kulinerkuliner" />
+        <activity android:name=".kuliner.DetailKuliner" />
+        <activity android:name=".Hotel.HotelHotel" />
+        <activity android:name=".Hotel.DetailHotel" />
+        <activity android:name=".Wisata.WisataWisata" />
+        <activity android:name=".Wisata.Detail_Wisata" />
+        <activity android:name=".kuliner" />
+        <activity
+            android:name=".ticket"
+            android:label="@string/title_activity_ticket"
+            />
+        <activity android:name=".hotel" />
+        <activity android:name=".wisata" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

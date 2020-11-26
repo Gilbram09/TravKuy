@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+       >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/p1"
+            android:padding="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAKET MURAH : "
+                android:textColor="#000000"
+
+                android:textSize="26dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 2 tiket peswata garuda  \n 2 Malam di rimba jimbaran Hotel"
+                android:textSize="20dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="149dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/bggggg"
+            android:text="IDR 10.000.000,00 \n BELI" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/p2"
+            android:padding="35dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAKET HOTEL: "
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:text=" 7 Hari Viroth's Hotel "
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="149dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/bggggg"
+            android:text="IDR 5.000.000,00 \n BELI" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/p3"
+            android:padding="85dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAKET SPESIAL"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="143dp"
+                android:paddingTop="30dp"
+                android:text=" 10 Tiket Gratis Ke Eropa \n  2 Tiket Bebas Hotel 7 Hari"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="149dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/bggggg"
+            android:text="IDR 70.000.000,00 \n BELI" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

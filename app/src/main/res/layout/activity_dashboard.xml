@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".dashboard">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#000000"
+        tools:ignore="MissingConstraints"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutDotss"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dots_margin_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <Button
+            android:id="@+id/btn_skip"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:background="@null" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="250dp"
+        app:columnCount="2"
+
+        app:orientation="horizontal"
+        app:rowCount="1"
+
+        >
+
+
+        <FrameLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/bggg"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+
+
+            <Button
+                android:id="@+id/wisata"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_wisata" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user"
+                    android:layout_centerHorizontal="true"
+                    android:text="Wisata"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/bggg"
+            android:layout_margin="5dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <Button
+                android:id="@+id/hotel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/job"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/hotel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/job"
+                    android:layout_centerHorizontal="true"
+                    android:text="Hotel"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/bggg"
+            android:layout_margin="5dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <Button
+                android:id="@+id/kuliner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/notif"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/kuliner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notif"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="Kuliner"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/bggg"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            >
+
+            <Button
+                android:id="@+id/guide"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mail"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/wisata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mail"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tiket"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/bggg"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            >
+
+            <Button
+                android:id="@+id/Bundle"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/rate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rate"
+                    android:layout_centerHorizontal="true"
+                    android:text="Bundle"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/bggg"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            >
+
+
+            <Button
+                android:id="@+id/setting"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/rev"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rev"
+                    android:layout_centerHorizontal="true" android:text="Setting "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
